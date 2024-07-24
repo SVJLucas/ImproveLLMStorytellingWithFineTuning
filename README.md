@@ -62,7 +62,40 @@ These topics serve as a distilled essence of potential stories, providing a them
 
 #### Step 2: Expanding into Full Stories
 
-Next, we take the generated topics from Step 1 and use them as prompts for the smaller model, Phi 1-1B, to develop into full-length stories. This approach allows the smaller model to focus on narrative expansion, characterization, and detail without the initial overhead of theme conceptualization. For instance, the topic about the Solar Empire would be expanded into a detailed story, illustrating the decline of the empire and the emperor's tyranny as follows:
+After generating story topics in Step 1, we utilize these prompts to guide the smaller model, Phi 1-1B, in crafting detailed, narrative-driven stories. This structured approach allows Phi 1-1B to concentrate on narrative development, enriching the plot and characters without the initial burden of theme conceptualization.
 
+##### Prompt Engineering for Stories
+
+To aid the smaller model in creating compelling narratives, we use a prompt engineering technique that specifies the desired structure and brevity of the stories. Here's the function used to generate these prompts:
+
+```python
+def create_story_prompt(topic: str) -> str:
+    """
+    Constructs a prompt for generating a short story focused on a specific topic, ensuring the story is concise yet complete.
+
+    Args:
+        topic (str): The central theme of the story to be created.
+
+    Returns:
+        str: A formatted prompt instructing the model to produce a short story with two compact paragraphs, including a resolution and character development.
+    """
+    # Define the prompt with specific instructions for story creation
+    prompt = f'''
+    [INST]:<<SYS>>You are a chatbot tasked with creating stories for users.
+    
+    Your stories must be short, they CANNOT be long, which means your stories must have only TWO paragraphs of small size.
+    Ensure each story has a clear conclusion and well-defined characters!<<SYS>>
+    
+    <<User>>: Invent a completely new story about "{topic}".[/INST]
+    '''
+    return prompt
+```
+
+
+For instance, the topic about the Solar Empire would be expanded into a detailed story, illustrating the decline of the empire and the emperor's tyranny as follows:
+
+```python
+"In the final days of the Solar Empire, a mad emperor ruled with an iron fist. His power was unmatched, and his people lived in fear of his wrath. The emperor was obsessed with the idea of building a pyramid of skulls, a monument to his own greatness. He believed that the pyramid would grant him immortality, and he spared no expense in its construction.\n\nThe empire was in decline, and the people suffered under the emperor's rule. They were forced to work long hours, and their meager wages were barely enough to sustain them. The emperor cared little for their suffering, and he taxed them heavily to fund his grand project. As the pyramid rose higher and higher, the people grew more and more desperate. They knew that the emperor's madness would be their downfall, and they longed for the day when he would be overthrown. But the emperor's grip on power was too strong, and it seemed that he would never be defeated. The pyramid of skulls stood as a symbol of the empire's decay, a monument to the emperor's madness and the people's suffering."
+```
 
 
