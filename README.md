@@ -38,7 +38,11 @@ Knowledge distillation is a technique used to transfer knowledge from a large, c
 The distillation process is broken down into two primary steps, focusing on generating and refining story content:
 
 #### Step 1: Generating Story Topics
-First, we provide the larger model, Llama 2-70B, with various story themes selected from the top 200 common literature themes listed by ProWritingAid, carefully filtering out any themes that involve explicit or restricted content. The model uses these themes to create concise story topics or summaries.
+First, we provide the larger model, Llama 2-70B, with various story themes selected from the top 200 common literature themes listed by ProWritingAid, carefully filtering out any themes that involve explicit or restricted content. The model uses these themes to create concise story topics or summaries that represent the main story ideas.
+
+<p align="center">
+  <img width="700" alt="logo_dark_stacked_KzUurne (1)" src="https://github.com/user-attachments/assets/1de63871-9f89-4e19-8ba0-051c4d7573ad">
+</p> 
 
 ##### Prompt Engineering for Story Topics
 We employ a specific prompting technique known as "1-shot learning" to guide the model in generating story summaries. This technique involves providing the model with a single example of the desired task, setting the context for its responses. Here’s how the prompt is structured:
@@ -91,6 +95,10 @@ These topics serve as a distilled essence of potential stories, providing a them
 #### Step 2: Expanding into Full Stories
 
 After generating story topics in Step 1, we utilize these prompts to guide the smaller model, Phi 1-1B, in crafting detailed, narrative-driven stories. This structured approach allows Phi 1-1B to concentrate on narrative development, enriching the plot and characters without the initial burden of theme conceptualization.
+
+<p align="center">
+  <img width="700" alt="logo_dark_stacked_KzUurne (1)" src="https://github.com/user-attachments/assets/362c43bb-391a-4621-a223-b2d23c6e42dc">
+</p> 
 
 ##### Prompt Engineering for Stories
 
