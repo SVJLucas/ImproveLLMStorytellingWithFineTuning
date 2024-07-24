@@ -1,8 +1,29 @@
-# Improve LLM Storytelling With FineTuning via Knowledge Distillation
+
+# GDSC AI Workshop: Enhancing Storytelling in Language Models through Fine-Tuning
+
+
+
+## About the Workshop
 
 <p align="center">
   <img width="500" alt="logo_dark_stacked_KzUurne (1)" src="https://github.com/SVJLucas/SVJLucas/assets/60625769/1501cb07-3add-4907-9778-10b90c223e69">
-</p>
+</p> 
+
+This workshop is organized and led by [Lucas José](https://www.linkedin.com/in/lucasjosevelosodesouza/), a leader in the Google Developer Student Clubs (GDSC). It is tailored for students eager to explore the field of Artificial Intelligence, with a specific focus on Natural Language Processing (NLP). The primary aim is to develop practical skills in fine-tuning smaller Language Models (LLMs) to enhance their storytelling capabilities.
+
+
+## Objective
+The primary goal of this workshop is to empower participants with the ability to implement knowledge distillation and fine-tuning techniques to create a compact yet powerful storytelling model. By distilling the capabilities of a larger model (Llama 2-70B) into a smaller model (Phi 1-1B), participants learn how to maintain high-quality narrative generation while reducing computational demands, making advanced NLP technologies more accessible and efficient.
+
+### Workshop Program
+The workshop covers a range of topics, including:
+
+* **Introduction to Knowledge Distillation**: Participants are introduced to the concept of knowledge distillation, where knowledge from a larger model is transferred to a smaller model without significant loss in performance.
+* **Practical Fine-Tuning Session**: Attendees participate in hands-on sessions where they apply fine-tuning techniques on Phi 1-1B using the QLORA (Quantized Linear Operation with Regularization and Attention) method, which is crucial for managing resource constraints while maintaining model effectiveness.
+* **Dataset Creation and Management**: The workshop also guides participants through the creation of a storytelling dataset. This involves generating story topics from a curated list of literature themes and expanding these topics into full narratives.
+* **Fine-Tuning in High-Performance Environments**: A detailed session on how to set up and run fine-tuning processes in _Google Colab_ on an A100 GPU, utilizing specific configurations to optimize memory and compute resources.
+
+
 
 ## Knowledge Distillation for Storytelling Models
 
@@ -110,6 +131,13 @@ The final dataset has the amount of **1476** stories, and with them we'll finetu
 ### Utilizing QLORA for Fine-Tuning
 
 QLORA (Quantized Linear Operation with Regularization and Attention) is an advanced technique used in our fine-tuning process. This method involves modifying parts of the transformer model to use quantized computations, which significantly reduces the memory footprint without compromising the model's ability to learn complex patterns. By using QLORA, we can train larger models or use larger batch sizes within the same memory limits, enhancing the effectiveness of our training procedure on resource-restricted platforms like Google Colab.
+
+
+<p align="center">
+  <img width="500" alt="logo_dark_stacked_KzUurne (1)" src="https://github.com/user-attachments/assets/5bd7fdab-0cec-4606-996b-99da8dad9c69">
+</p> 
+
+
 
 ### Fine-tuning Parameters Details
 To successfully run the fine-tuning process on a powerful A100 GPU in Google Colab, specific training configurations are essential to maximize efficiency and fit the model within the available memory constraints. Below is an explanation of each configuration parameter and its significance:
