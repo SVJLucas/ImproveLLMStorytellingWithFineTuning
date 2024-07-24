@@ -1,5 +1,5 @@
 
-# GDSC AI Workshop: Enhancing Storytelling in Language Models through Fine-Tuning
+# GDSC AI Workshop: Enhancing Storytelling in Language Models through Fine-Tuning and Knowledge Distillation
 
 
 
