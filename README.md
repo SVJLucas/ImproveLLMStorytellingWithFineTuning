@@ -98,4 +98,25 @@ For instance, the topic about the Solar Empire would be expanded into a detailed
 "In the final days of the Solar Empire, a mad emperor ruled with an iron fist. His power was unmatched, and his people lived in fear of his wrath. The emperor was obsessed with the idea of building a pyramid of skulls, a monument to his own greatness. He believed that the pyramid would grant him immortality, and he spared no expense in its construction.\n\nThe empire was in decline, and the people suffered under the emperor's rule. They were forced to work long hours, and their meager wages were barely enough to sustain them. The emperor cared little for their suffering, and he taxed them heavily to fund his grand project. As the pyramid rose higher and higher, the people grew more and more desperate. They knew that the emperor's madness would be their downfall, and they longed for the day when he would be overthrown. But the emperor's grip on power was too strong, and it seemed that he would never be defeated. The pyramid of skulls stood as a symbol of the empire's decay, a monument to the emperor's madness and the people's suffering."
 ```
 
-The final dataset has the
+The final dataset has the amount of **1476** stories, and with them we'll finetunning out small LLM.
+
+
+
+## Running the Model Fine-Tuning in Google Colab on A100 GPU
+
+### Utilizing QLORA for Fine-Tuning
+
+QLORA (Quantized Linear Operation with Regularization and Attention) is an advanced technique used in our fine-tuning process. This method involves modifying parts of the transformer model to use quantized computations, which significantly reduces the memory footprint without compromising the model's ability to learn complex patterns. By using QLORA, we can train larger models or use larger batch sizes within the same memory limits, enhancing the effectiveness of our training procedure on resource-restricted platforms like Google Colab.
+
+### Fine-tuning Parameters Details
+To successfully run the fine-tuning process on a powerful A100 GPU in Google Colab, specific training configurations are essential to maximize efficiency and fit the model within the available memory constraints. Below is an explanation of each configuration parameter and its significance:
+
+
+* **Batch Size and Gradient Accumulation:** Given the memory constraints of GPUs, even as powerful as the A100, we use a smaller batch size per device. To compensate for the smaller batch size and still leverage the deep learning benefits of larger batches, we implement gradient accumulation. This approach means that the model updates its weights only after several forward passes, effectively simulating a larger batch size.
+
+* **Learning Rate and Scheduler:** A lower learning rate combined with a cosine learning rate scheduler ensures smooth and effective model training over epochs. The scheduler adjusts the learning rate following a cosine curve, reducing the risk of overshooting minima in the loss landscape.
+
+* **Warmup Steps:** Implementing a few warmup steps at the beginning of the training helps in gradually ramping up the learning rate from zero. This technique is beneficial for stabilizing the training early on, preventing the model from diverging due to high initial learning rates.
+
+Incorporating these configurations and techniques ensures that the fine-tuning process is not only memory-efficient but also robust and effective, making it possible to train state-of-the-art models even in constrained environments like Google Colab.
+
