@@ -13,7 +13,7 @@ This workshop is organized and led by [Lucas José](https://www.linkedin.com/in/
 
 
 ## Objective
-The primary goal of this workshop is to empower participants with the ability to implement knowledge distillation and fine-tuning techniques to create a compact yet powerful storytelling model. By distilling the capabilities of a larger model (Llama 2-70B) into a smaller model (Phi 1-1B), participants learn how to maintain high-quality narrative generation while reducing computational demands, making advanced NLP technologies more accessible and efficient.
+The primary goal of this workshop is to empower participants with the ability to implement knowledge distillation and fine-tuning techniques to create a compact yet powerful storytelling model. By distilling the capabilities of a larger model (Meta Llama 2-70B) into a smaller model (Microsoft Phi 1-1B), participants learn how to maintain high-quality narrative generation while reducing computational demands, making advanced NLP technologies more accessible and efficient.
 
 <p align="center">
   <img width="400" alt="logo_dark_stacked_KzUurne (1)" src="https://github.com/user-attachments/assets/100636f1-8a76-4bb3-987d-e8621971698d">
