@@ -210,7 +210,7 @@ One day, Jack stumbled upon a black market that dealt in emotions. Desperate for
 </AI>
 ```
 
-The model fine-tuning was carried out by iterating over the entire dataset 8 times, which required 528 steps. The process lasted about 23 minutes, and the results in terms of loss can be seen in the chart below:
+The model fine-tuning was carried out by iterating over the entire dataset 8 times, which required 528 steps. The process lasted about only **23 minutes**, and the results in terms of loss can be seen in the chart below:
 
 <p align="center">
   <img width="750" alt="Training and Validation Loss" src="https://github.com/user-attachments/assets/eb0c3bc3-da68-48ee-a8eb-2fc0aa4cd8ec">
