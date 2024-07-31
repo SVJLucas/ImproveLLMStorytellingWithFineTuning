@@ -160,6 +160,7 @@ QLORA (Quantized Linear Operation with Regularization and Attention) is an advan
 
 
 
+
 ### Fine-tuning Parameters Details
 
 
@@ -181,6 +182,34 @@ Incorporating these configurations and techniques ensures that the fine-tuning p
 
 ### Fine-tuning Training Details
 
+For the fine-tuning process, a template was used for training the model. One of the training samples, within this template, can be found below:
+
+```html
+<SYSTEM>
+
+You are a chatbot that create stories for users.
+
+Your stories must be short, they CANNOT be long, which means your stories must have only TWO paragraphs of small size!!
+
+</SYSTEM>
+
+<USER>
+
+Invent a completely new story about:
+
+In a world where emotions are currency, a man with chronic depression is forced to become a black market dealer to survive
+
+</USER>
+
+<AI>
+
+In the world where emotions are currency, a man named Jack had always struggled to find his place. He suffered from chronic depression, which made it difficult for him to feel the positive emotions that were in high demand. Despite his best efforts, he found himself constantly struggling to make ends meet.
+
+One day, Jack stumbled upon a black market that dealt in emotions. Desperate for a way to earn a living, he turned to this illegal trade. He started small, selling his own negative emotions to those who were willing to pay for them. But as he delved deeper into the underground world, he found himself drawn into a dangerous game of supply and demand. With each transaction, Jack risked being caught by the authorities, who were determined to shut down the black market. Despite the risks, Jack continued to deal, knowing that it was the only way for him to survive in a world that placed a price tag on emotions.
+
+</AI>
+```
+
 The model fine-tuning was carried out by iterating over the entire dataset 8 times, which required 528 steps. The process lasted about 23 minutes, and the results in terms of loss can be seen in the chart below:
 
 <p align="center">
@@ -190,6 +219,8 @@ The model fine-tuning was carried out by iterating over the entire dataset 8 tim
 ## Fine-tuning Comparison
 
 ### Model Size
+
+
 
 <p align="center">
   <img width="700" alt="First Comparison" src="https://github.com/user-attachments/assets/02a0adba-a7fd-4428-a309-b15d8684e3e7">
