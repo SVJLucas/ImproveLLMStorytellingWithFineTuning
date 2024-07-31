@@ -282,7 +282,7 @@ The Original Phi-1 Model's response was entirely irrelevant to the prompt, offer
 The GDSC AI Workshop successfully provided practical skills and knowledge to enhance storytelling capabilities in smaller language models through fine-tuning and knowledge distillation techniques. Focusing on Natural Language Processing (NLP), the workshop demonstrated how to maintain high-quality narrative generation while reducing computational demands. We learned to distill the capabilities of a larger model, Meta Llama 2-70B, into a smaller model, Microsoft Phi 1-1B, using advanced techniques like data-free distillation and QLORA for fine-tuning. Hands-on sessions covered essential topics such as knowledge distillation, practical fine-tuning, and dataset management, guiding us in generating and expanding story topics. The fine-tuning process on Google Colab with a V100 GPU demonstrated optimized resource usage, reducing GPU memory needs by 5x while delivering higher quality and more relevant responses. The workshop highlighted the practical application of these techniques, making advanced NLP technologies more accessible and efficient for various applications and emphasizing efficient model training in resource-constrained environments.
 
 <p align="center">
-  <img width="400" alt="Thank you!" src="https://github.com/user-attachments/assets/42cc57ca-6614-4f04-85e1-6e4a6c6d56aa">
+  <img width="400" alt="Thank you!" src="https://github.com/user-attachments/assets/eaf9eb20-121d-4539-bdff-34b1dd905053">
 </p> 
 
 
