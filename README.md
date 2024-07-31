@@ -11,6 +11,31 @@
 
 This workshop is organized and led by [Lucas José](https://www.linkedin.com/in/lucasjosevelosodesouza/), a leader in the Google Developer Student Clubs (GDSC). It is tailored for students eager to explore the field of Artificial Intelligence, with a specific focus on Natural Language Processing (NLP). The primary aim is to develop practical skills in fine-tuning smaller Language Models (LLMs) to enhance their storytelling capabilities.
 
+## Table of Contents
+
+Unlock the secrets of advanced storytelling AI with our comprehensive workshop on fine-tuning and knowledge distillation.
+
+1. [About the Workshop](#about-the-workshop)
+2. [Objective](#objective)
+3. [Workshop Program](#workshop-program)
+4. [Knowledge Distillation for Storytelling Models](#knowledge-distillation-for-storytelling-models)
+   * [Overview](#overview)
+   * [Data-Free Distillation Approach](#data-free-distillation-approach)
+   * [Strategy](#strategy)
+     * [Step 1: Generating Story Topics](#step-1-generating-story-topics)
+       * [Prompt Engineering for Story Topics](#prompt-engineering-for-story-topics)
+     * [Step 2: Expanding into Full Stories](#step-2-expanding-into-full-stories)
+       * [Prompt Engineering for Stories](#prompt-engineering-for-stories)
+5. [Running the Model Fine-Tuning in Google Colab on V100 GPU](#running-the-model-fine-tuning-in-google-colab-on-v100-gpu)
+   * [Utilizing QLORA for Fine-Tuning](#utilizing-qlora-for-fine-tuning)
+   * [Fine-Tuning Parameters Details](#fine-tuning-parameters-details)
+   * [Fine-Tuning Training Details](#fine-tuning-training-details)
+6. [Fine-Tuning Comparison](#fine-tuning-comparison)
+   * [Comparing Model's Size](#comparing-models-size)
+   * [Comparing the Quality of the Model's Responses](#comparing-the-quality-of-the-models-responses)
+     * [First Test: Assessing Storytelling with Fantasy and Magic](#first-test-assessing-storytelling-with-fantasy-and-magic)
+     * [Second Test: Evaluating Storytelling in Realistic Scenarios](#second-test-evaluating-storytelling-in-realistic-scenarios)
+7. [Conclusion](#conclusion)
 
 ## Objective
 The primary goal of this workshop is to empower participants with the ability to implement knowledge distillation via Data-free distillation and fine-tuning techniques to create a compact yet powerful storytelling model. By distilling the capabilities of a larger model (Meta Llama 2-70B) into a smaller model (Microsoft Phi 1-1B), participants learn how to maintain high-quality narrative generation while reducing computational demands, making advanced NLP technologies more accessible and efficient.
