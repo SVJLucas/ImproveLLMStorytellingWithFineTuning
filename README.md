@@ -178,3 +178,13 @@ Incorporating these configurations and techniques ensures that the fine-tuning p
   <img width="750" alt="logo_dark_stacked_KzUurne (1)" src="https://github.com/user-attachments/assets/eb0c3bc3-da68-48ee-a8eb-2fc0aa4cd8ec">
 </p> 
 
+# Fine-tuning Comparison
+
+<p align="center">
+  <img width="700" alt="First Comparison" src="https://github.com/user-attachments/assets/02a0adba-a7fd-4428-a309-b15d8684e3e7">
+</p> 
+
+<p align="center">
+  <img width="700" alt="Second" src="https://github.com/user-attachments/assets/805108cd-543b-4b23-8585-2742245ade1e">
+</p> 
+
