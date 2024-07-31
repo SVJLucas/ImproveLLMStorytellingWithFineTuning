@@ -174,3 +174,7 @@ To successfully run the fine-tuning process on a V100 GPU in Google Colab, speci
 
 Incorporating these configurations and techniques ensures that the fine-tuning process is not only memory-efficient but also robust and effective, making it possible to train state-of-the-art models even in constrained environments like Google Colab.
 
+<p align="center">
+  <img width="750" alt="logo_dark_stacked_KzUurne (1)" src="https://github.com/user-attachments/assets/eb0c3bc3-da68-48ee-a8eb-2fc0aa4cd8ec">
+</p> 
+
