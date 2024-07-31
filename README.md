@@ -240,9 +240,7 @@ For the first test, we are going to choose a story about 'A group of fairies set
   <img width="700" alt="First Comparison" src="https://github.com/user-attachments/assets/2f105bbe-3f65-40ef-a100-0bd5408f3062">
 </p> 
 
-The Original Phi-1 Model's response was irrelevant and unhelpful. It suggested creating a story about "The Great Gatsby," which had no connection to the prompt about fairies and an evil sorcerer. Additionally, it provided generic instructions rather than crafting a narrative, failing to engage with the specific scenario presented.
-
-In contrast, our Fine-Tuned Phi-1: The Storyteller Model delivered a coherent story. It introduced a group of fairies called the "Crystal Keep," detailed their mission to protect their organization from an evil sorcerer, and described their efforts to create a powerful machine to achieve their goal. This model effectively addressed the prompt, providing a well-structured narrative with clear characters, conflict, and resolution. The Fine-Tuned model demonstrated its superior storytelling ability, making it far more suitable for generating relevant and compelling stories.
+The Original Phi-1 Model's response was irrelevant and unhelpful, suggesting a story about "The Great Gatsby" instead of addressing the prompt about fairies and an evil sorcerer. It also provided generic instructions rather than crafting a narrative, failing to engage with the specific scenario. In contrast, the Fine-Tuned Phi-1: The Storyteller Model delivered a coherent story about a group of fairies called the "Crystal Keep" on a mission to protect their organization from an evil sorcerer by creating a powerful machine. This model effectively addressed the prompt, providing a well-structured narrative with clear characters, conflict, and resolution, showcasing its superior storytelling ability and suitability for generating relevant and compelling stories.
 
 #### Second Test: Evaluating Storytelling in Realistic Scenarios
 
@@ -252,9 +250,7 @@ For the second test, we are going to choose a story about 'Determined to protect
   <img width="700" alt="Second" src="https://github.com/user-attachments/assets/a9913c11-2740-479c-9dbc-51fec5b19218">
 </p> 
 
-Again, the Original Phi-1 Model's response was entirely irrelevant to the prompt. Instead of crafting a story about police officers patrolling at night, it provided a generic statement about using natural language processing techniques to generate stories based on user input. This response lacked any narrative, characters, or plot, making it ineffective for evaluating storytelling capabilities.
-
-However, the Fine-Tuned Phi-1: The Storyteller Model delivered a detailed narrative. It introduced a group of dedicated police officers on a mission to protect their city from rising crime rates, highlighting their challenges and personal struggles. This model effectively addressed the prompt, offering a story with character development and conflict. The Fine-Tuned model demonstrated its superior ability to generate relevant and compelling stories, making it far more suitable for such tasks.
+The Original Phi-1 Model's response was entirely irrelevant to the prompt, offering a generic statement about using natural language processing techniques instead of crafting a story about police officers patrolling at night. This response lacked narrative, characters, and plot, making it ineffective for evaluating storytelling capabilities. However, the Fine-Tuned Phi-1: The Storyteller Model delivered a detailed narrative about dedicated police officers on a mission to protect their city from rising crime, highlighting their challenges and personal struggles. This model addressed the prompt with character development and conflict, showcasing its superior ability to generate relevant and compelling stories, making it far more suitable for such tasks.
 
 # Conclusion
 
