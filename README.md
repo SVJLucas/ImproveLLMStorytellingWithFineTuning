@@ -189,6 +189,8 @@ The model fine-tuning was carried out by iterating over the entire dataset 8 tim
 
 ## Fine-tuning Comparison
 
+### Model Size
+
 <p align="center">
   <img width="700" alt="First Comparison" src="https://github.com/user-attachments/assets/02a0adba-a7fd-4428-a309-b15d8684e3e7">
 </p> 
