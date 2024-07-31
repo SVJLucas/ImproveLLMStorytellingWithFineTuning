@@ -218,15 +218,46 @@ The model fine-tuning was carried out by iterating over the entire dataset 8 tim
 
 ## Fine-tuning Comparison
 
-### Model Size
+### Comparing Model's Size 
 
-
-
-<p align="center">
-  <img width="700" alt="First Comparison" src="https://github.com/user-attachments/assets/02a0adba-a7fd-4428-a309-b15d8684e3e7">
-</p> 
+The fine-tuned Phi-1 model dramatically reduces GPU memory usage, needing only 1031.14 MiB compared to the original's 5410.27 MiB, **approximately 5x reduction in model size**. This means the model can run on less powerful GPUs, making it more accessible for a wide range of applications. The lower memory needs also make it easier to scale, allowing more instances to run on a single GPU, which boosts efficiency and cuts costs, especially for cloud services where GPU usage is billed based on time and resources used.
 
 <p align="center">
-  <img width="700" alt="Second" src="https://github.com/user-attachments/assets/805108cd-543b-4b23-8585-2742245ade1e">
+  <img width="700" alt="First Comparison" src="https://github.com/user-attachments/assets/e9787044-4dc5-4a1d-98e4-10002f82fe85">
 </p> 
 
+The reduced memory requirements mean these models can be used in more places, **including mobile and edge devices**, broadening their potential impact and usability. However, it's essential to ensure that this efficiency doesn't come at the cost of performance or accuracy. Thorough testing is necessary to confirm that the fine-tuned model still delivers high-quality results. Let's proceed with evaluating the quality of the model's answers.
+
+### Comparing the Quality of the Model's Responses
+
+Let's now compare the quality of the model's responses to prompts outside the training/validation set, i.e., new prompts. Ideally, to perform this validation, the task should be automated through grading by a stronger LLM, such as Mistral-7B, to compare multiple prompts (LLM-based evaluation). However, for simplicity, we will just take a few new prompts and evaluate the quality manually.
+
+#### First Test: Assessing Storytelling with Fantasy and Magic
+
+For the first test, we are going to choose a story about 'A group of fairies sets out to free Crystal Keep from an evil sorcerer'. Choosing a prompt about fairies and sorcerers effectively tests a model's storytelling abilities by requiring it to generate a complex, engaging, and creative narrative while staying relevant and coherent. This specific and imaginative scenario helps assess the model's capacity for character development, descriptive detail, and plot progression.
+
+<p align="center">
+  <img width="700" alt="First Comparison" src="https://github.com/user-attachments/assets/2f105bbe-3f65-40ef-a100-0bd5408f3062">
+</p> 
+
+The Original Phi-1 Model's response was irrelevant and unhelpful. It suggested creating a story about "The Great Gatsby," which had no connection to the prompt about fairies and an evil sorcerer. Additionally, it provided generic instructions rather than crafting a narrative, failing to engage with the specific scenario presented.
+
+In contrast, our Fine-Tuned Phi-1: The Storyteller Model delivered a coherent story. It introduced a group of fairies called the "Crystal Keep," detailed their mission to protect their organization from an evil sorcerer, and described their efforts to create a powerful machine to achieve their goal. This model effectively addressed the prompt, providing a well-structured narrative with clear characters, conflict, and resolution. The Fine-Tuned model demonstrated its superior storytelling ability, making it far more suitable for generating relevant and compelling stories.
+
+#### Second Test: Evaluating Storytelling in Realistic Scenarios
+
+For the second test, we are going to choose a story about 'Determined to protect the city from rising crime rates, a team of dedicated police officers patrols the streets on their night shifts.'. Choosing a prompt about dedicated police officers patrolling to protect their city from rising crime rates tests the model's versatility by shifting from fantasy to a realistic and relatable scenario, assessing its ability to handle complex characters, dynamic plot progression, and relevant social themes. This comprehensive evaluation ensures the model's proficiency across different genres and contexts, highlighting its narrative clarity, coherence, and descriptive detail.
+
+<p align="center">
+  <img width="700" alt="Second" src="https://github.com/user-attachments/assets/a9913c11-2740-479c-9dbc-51fec5b19218">
+</p> 
+
+Again, the Original Phi-1 Model's response was entirely irrelevant to the prompt. Instead of crafting a story about police officers patrolling at night, it provided a generic statement about using natural language processing techniques to generate stories based on user input. This response lacked any narrative, characters, or plot, making it ineffective for evaluating storytelling capabilities.
+
+However, the Fine-Tuned Phi-1: The Storyteller Model delivered a detailed narrative. It introduced a group of dedicated police officers on a mission to protect their city from rising crime rates, highlighting their challenges and personal struggles. This model effectively addressed the prompt, offering a story with character development and conflict. The Fine-Tuned model demonstrated its superior ability to generate relevant and compelling stories, making it far more suitable for such tasks.
+
+# Conclusion
+
+The GDSC AI Workshop successfully provided participants with practical skills and knowledge to enhance storytelling capabilities in smaller language models through fine-tuning and knowledge distillation techniques. By focusing on Natural Language Processing (NLP), the workshop demonstrated how to maintain high-quality narrative generation while reducing computational demands. Participants learned to distill the capabilities of a larger model, Meta Llama 2-70B, into a smaller model, Microsoft Phi 1-1B, using advanced techniques like data-free distillation and QLORA (Quantized Linear Operation with Regularization and Attention) for fine-tuning.
+
+The hands-on sessions covered various essential topics, including knowledge distillation, data-free distillation, practical fine-tuning, and dataset creation and management. By guiding participants through generating story topics and expanding them into full narratives, the workshop effectively showcased the power of structured prompt engineering. The fine-tuning process on Google Colab with a V100 GPU demonstrated how to optimize memory and compute resources while maintaining model effectiveness. The fine-tuned Phi-1 model significantly reduced GPU memory usage and, more importantly, produced higher quality and more relevant responses than the original model. This improvement makes advanced NLP technologies more accessible and efficient for a wide range of applications. This workshop not only highlighted the practical implementation of these techniques but also emphasized the importance of efficient model training in resource-constrained environments, paving the way for future advancements in AI-driven storytelling.
